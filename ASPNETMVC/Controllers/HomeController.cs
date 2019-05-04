@@ -20,6 +20,7 @@ namespace ASPNETMVC.Controllers
         public ActionResult Buy(int id)
         {
             ViewBag.CarId = id;
+            ViewBag.Car = db.Cars.Find(id);
             return View();
         }
         [HttpPost]

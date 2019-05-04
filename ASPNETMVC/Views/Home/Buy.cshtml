@@ -12,6 +12,7 @@
         <h3>Форма оформлення покупки</h3>
         <form method="post" action="">
             <input type="hidden" value="@ViewBag.CarId" name="CarId" />
+            <p>Авто: @ViewBag.Car.Name; Ціна: @ViewBag.Car.Price; Виробник: @ViewBag.Car.Producer</p>
             <table>
                 <tr>
                     <td><p>Введіть своє им'я </p></td>
